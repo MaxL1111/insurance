@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Главная ERGO</title>
 
@@ -21,6 +20,7 @@
     <![endif]-->
 </head>
 <body>
+
 
 <div class="icon1"><a href="#"><span class="glyphicon glyphicon-earphone"></span><br>Телефон</a></div>
 <div class="icon2"><a href="#"><span class="glyphicon glyphicon-user"></span><br>Чат</a></div>
@@ -51,13 +51,27 @@
 
 
             <div class="col-lg-9 col-md-7 col-sm-24 col-xs-24 telephone">
-                <div>
-                    <ul id="tel" class="pull-right">
-                        <li><span class="glyphicon glyphicon-earphone"></span> +375 (17) 366-70-05</li>
-                        <li class="tel">+375 (17) 366-69-63</li>
-                        <li class="tel">+375 (17) 116-77-63</li>
-                    </ul>
-                </div>
+                <nav class="navbar navbar-default telephonenav">
+                    <div class="navbar-header">
+
+                        <button id="button1" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul id="tel" class="nav navbar-nav pull-right">
+                                <li><span class="glyphicon glyphicon-earphone"></span> +375 (17) 366-70-05</li>
+                                <li class="tel">+375 (17) 366-69-63</li>
+                                <li class="tel">+375 (17) 116-77-63</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
 
 
@@ -87,7 +101,9 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                        <ul class="nav navbar-nav base">
+                        <ul id="qq1" class="nav navbar-nav base">
+
+                            <ul id="qq2"></ul>
                             <li><a href="#">Физическим лицам<span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Юридическим лицам</a></li>
                             <li><a href="#">Сервис</a></li>
@@ -95,19 +111,22 @@
                     </div><!-- /.navbar-collapse -->
 
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-24 rightt">
+
+                <div class="col-lg-9 col-md-9 col-sm-24 col-xs-24 rightt">
 
                     <form class="navbar-form navbar-nav search">
                         <div class="form-group">
                             <button><img src="img/search.png"></button>
                             <input type="text" class="form-control" placeholder="Введите текст для поиска">
                         </div>
-                        <span class="language">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active-link"><a href="#">RU</a></li>
-                    <li><a href="#">EN</a></li>
-                </ul>
-            </span>
+                            <ul class="nav navbar-nav navbar-right language">
+                                <li class="active-link"><a href="#">RU</a></li>
+                                <li><a href="#">EN</a></li>
+                            </ul>
+
+
+
+
                     </form>
                 </div>
 
@@ -143,23 +162,25 @@
 
     <div class="container contacts">
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-24 column1">
-                <span class="text3">Контакты</span><br>
-                <span class="text4">+375 (17) 366-70-05</span><br>
-                <span class="text5">Единый номер</span><br>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-24 column1">
+                <span class="text3">Контакты</span>
+                <div class="text4">+375 (17) 366-70-05</div>
+                <span class="text5">Единый номер</span>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-24 column2">
-                <a href="#"><img src="img/chat.png"></a>
-                <a href="#"><img src="img/antenna.png"></a>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-24 column2">
+                <a href="#"><div class="circle1"><div class="circle2"><img class="chat" src="img/chat.png"><p>Чат</p></div></div></a>
+                <a href="#"><div class="circle1"><div class="circle2"><img src="img/agents.png"><p>Агенты</p></div></div></a>
+            </div>
 
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-24 column3">
+                <div class="col3">
+                <span class="text3">Страховой случай</span>
+                <div class="text4"><p>+375 (17) 116-77-63</p></div>
+                <span class="text5">Единый номер</span>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-24 column3">
-                <span class="line2"><img src="img/line2.png"></span>
-                <span class="text3">Страховой случай</span><br>
-                <span class="text4">+375 (17) 116-77-63</span><br>
-                <span class="text5">Единый номер</span><br>
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-24 column4">
+
+            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-24 column4">
                 <ul>
                     <li>Страхование от несчастных случаев и болезней во время поездки
                         за границу
@@ -179,8 +200,8 @@
 
 
             <div class="topic"><span class="text6">Новости</span>
-                <form><span class="allNews"><a href="#">Все новости</a><img
-                                src="img/arrow.png"></span></form>
+                <span class="allNews"><a href="#">Все новости</a><img
+                                src="img/arrow.png"></span>
             </div>
 
 
