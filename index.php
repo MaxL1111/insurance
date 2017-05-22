@@ -119,12 +119,10 @@
                             <button><img src="img/search.png"></button>
                             <input type="text" class="form-control" placeholder="Введите текст для поиска">
                         </div>
-                            <ul class="nav navbar-nav navbar-right language">
-                                <li class="active-link"><a href="#">RU</a></li>
-                                <li><a href="#">EN</a></li>
-                            </ul>
-
-
+                        <ul class="nav navbar-nav navbar-right language">
+                            <li class="active-link"><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
 
 
                     </form>
@@ -168,15 +166,25 @@
                 <span class="text5">Единый номер</span>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12 col-xs-24 column2">
-                <a href="#"><div class="circle1"><div class="circle2"><img class="chat" src="img/chat.png"><p>Чат</p></div></div></a>
-                <a href="#"><div class="circle1"><div class="circle2"><img src="img/agents.png"><p>Агенты</p></div></div></a>
+                <a href="#">
+                    <div class="circle1">
+                        <div class="circle2"><img class="chat" src="img/chat.png">
+                            <p>Чат</p></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="circle1">
+                        <div class="circle2"><img src="img/agents.png">
+                            <p>Агенты</p></div>
+                    </div>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-24 column3">
                 <div class="col3">
-                <span class="text3">Страховой случай</span>
-                <div class="text4"><p>+375 (17) 116-77-63</p></div>
-                <span class="text5">Единый номер</span>
+                    <span class="text3">Страховой случай</span>
+                    <div class="text4"><p>+375 (17) 116-77-63</p></div>
+                    <span class="text5">Единый номер</span>
                 </div>
             </div>
 
@@ -201,56 +209,59 @@
 
             <div class="topic"><span class="text6">Новости</span>
                 <span class="allNews"><a href="#">Все новости</a><img
-                                src="img/arrow.png"></span>
+                            src="img/arrow.png"></span>
             </div>
 
 
             <div class="row">
 
                 <div class="col-md-12 col-sm-24 row-flex card1">
-                    <div class="line-bottom">
-                        <div class="col-lg-8 col-md-10 col-sm-5 col-xs-5 newsimage">
-                            <img src="img/news1.jpg" alt="">
-                        </div>
-                        <div class="col-lg-16 col-md-14 col-sm-19 col-xs-19 newsdecsr">
-                            <a href="#">Забота о вашей финансовой безопасности,
-                                мы будем заботиться о своем здоровье</a>
+
+                    <section>
+                        <img src="img/news1.jpg">
+                        <div>
+                            <a class="newsdecsr" href="#">Забота о вашей финансовой безопасности,мы будем заботиться о
+                                своем здоровье</a>
                             <p>ЭРГО страхование жилища - чувство безопасности - идеальный
                                 подарок. Заказ сегодня и вы сможете выиграть дополнительные
                                 смарт - телевизор Samsung. заботиться о своем здоровье</p>
                             <p class="uper">21 января 2017</p>
                         </div>
-                    </div>
+                    </section>
+
                 </div>
 
 
                 <div class="col-md-12 col-sm-24 row-flex card2">
 
                     <div class="col-md-24 col-sm-12 col-xs-24 card21">
-                        <div class="line-bottom">
-                            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-5 image21"><img src="img/news2.jpg" alt="">
-                            </div>
-                            <div class="col-lg-20 col-md-19 col-sm-18 col-xs-19 discr21"><a href="#">Забота о вашей
-                                    финансовой
-                                    безопасности,мы будем заботиться о
+
+                        <section>
+                            <img src="img/news2.jpg">
+                            <div >
+
+                                <a href="#">Забота о вашей финансовой безопасности,мы будем заботиться о
                                     своем здоровье</a>
                                 <p class="uper">19 января 2017</p>
+
                             </div>
-                        </div>
+                        </section>
+
                     </div>
 
 
                     <div class="col-md-24 col-sm-12 col-xs-24 card22">
-                        <div class="line-bottom">
-                            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-5 image22"><img src="img/news3.jpg" alt="">
-                            </div>
-                            <div class="col-lg-20 col-md-19 col-sm-18 col-xs-19 discr22"><a href="#">Застраховать свой
-                                    дом, и вы
-                                    можете выиграть 1 из 5 умных
-                                    телевизоров</a>
+
+                        <section>
+                            <img src="img/news3.jpg">
+                            <div>
+                                <a href="#">Застраховать свой
+                                    дом, и вы можете выиграть 1 из 5 умных телевизоров</a>
                                 <p class="uper">3 января 2017</p>
                             </div>
-                        </div>
+                        </section>
+
+
                     </div>
 
                 </div>
@@ -264,6 +275,12 @@
     <div class="container insurance">
         <div class="row topic"><span>Популярные виды страхования</span></div>
         <div class="row row-flex">
+
+
+
+
+
+
 
             <div class="col-md-8 col-sm-12 center-block image">
                 <img src="img/insh1.jpg">
