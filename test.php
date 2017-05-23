@@ -36,35 +36,25 @@
     <![endif]-->
 </head>
 <body>
-ererr
 <div class="container">
-    <div class="col-md-12 t">
-        <table>
-            <tr>
-                <th><img src="img/news2.jpg"></th>
-                <th><a href="#">Забота о вашей финансовой
-                        безопасности,мы будем заботиться о
-                        своем здоровье</a>
-                    <p class="uper">19 января 2017</p></th>
-            </tr>
+    <div class="col-lg-9 col-md-7 col-sm-24 col-xs-24 telephone">
+        <nav class="telephonenav">
+            <div class="menuT"><span class="glyphicon glyphicon-phone-alt"></div>
+            <ul id="tel" class="nav navbar-nav pull-right">
+                <li><span class="glyphicon glyphicon-earphone"></span> +375 (17) 366-70-05</li>
+                <li class="tel">+375 (17) 366-69-63</li>
+                <li class="tel">+375 (17) 116-77-63</li>
+            </ul>
 
-        </table>
+        </nav>
     </div>
-    <div class="col-md-12 t">
-        <table>
-            <tr>
-                <th><img src="img/news3.jpg"></th>
-                <th><a href="#">Забота о вашей финансовой
-                        безопасности,мы будем заботиться о
-                        своем здоровье</a>
-                    <p class="uper">19 января 2017</p></th>
-            </tr>
 
-        </table>
+    <div class="col-md-24">
+        Другое мнение
     </div>
 
 </div>
-seddh
+
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -205,6 +205,14 @@ header {
     .telephone {
 
       .telephonenav {
+        position: relative;
+        .menuT {
+          font-size: 22px;
+          color: #0f0f0f;
+          display: none;
+          cursor: pointer;
+        }
+
         .pull-right {
           padding-top: 16px;
         }
@@ -216,7 +224,6 @@ header {
         margin-bottom: 0;
       }
 
-      overflow: hidden;
       li {
         list-style-type: none;
         display: inline-block;
@@ -245,7 +252,6 @@ header {
       background-color: #FFFFFF;
       top: 21px;
       z-index: 200;
-      overflow: hidden;
 
     }
 
@@ -285,42 +291,49 @@ header {
   }
 
   .menu2 {
-    background-color: #FFFFFF;
+
     margin-bottom: 0;
 
-    #bs-example-navbar-collapse-2 {
+    .menuT2 {
+      font-size: 22px;
+      color: #0f0f0f;
+      display: none;
+      cursor: pointer;
+    }
+
+    .base {
+      padding-top: 13px;
       padding-left: 0;
-    }
+      li {
+        padding-right: 19px;
+        list-style-type: none;
+        display: inline-block;
+      }
 
-    .navbar-nav > li {
-      padding-right: 19px;
-    }
+      li > a {
+        color: $color;
+        padding-top: 14px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 14px;
+        text-decoration: none;
+        margin-bottom: 0;
+        font-size: 16px;
+        border-bottom: solid 2px transparent;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
 
-    .navbar-nav > li > a {
-      color: $color;
-      padding-top: 14px;
-      padding-left: 13px;
-      padding-right: 13px;
-      padding-bottom: 14px;
-      margin-bottom: 0;
-      font-size: 16px;
-      border-bottom: solid 2px transparent;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
+      li > a:hover {
+        color: #762b39;
+        border-bottom-color: #762b39;
+      }
 
-    .navbar-toggle {
-      float: left;
-    }
-    .navbar-nav > li > a:hover {
-      color: #762b39;
-      border-bottom-color: #762b39;
-    }
-
-    .navbar-nav > li {
-      padding-left: 1px;
+      li {
+        padding-left: 1px;
+      }
     }
 
     .language {
@@ -357,7 +370,7 @@ header {
     }
 
     .search {
-      padding-left: 14px;
+      padding-left: 30px;
 
       .form-group {
         float: left;
@@ -1096,7 +1109,7 @@ header {
       }
 
       .telephone {
-        text-align: right;
+        padding-left: 127px;
         .telephonenav .pull-right {
           padding-top: 12px;
         }
@@ -1110,6 +1123,16 @@ header {
     }
 
     .menu2 {
+      .base {
+        li {
+          padding-right: 0;
+          a {
+            padding-left: 6px;
+            padding-right: 6px;
+          }
+        }
+      }
+
       span.glyphicon-search {
         margin-left: 0;
       }
@@ -1171,9 +1194,6 @@ header {
 
         }
 
-        .card2 {
-
-        }
       }
 
     }
@@ -1203,6 +1223,8 @@ header {
       }
 
       .telephone {
+        padding-left: 43px;
+        padding-bottom: 4px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -1210,7 +1232,7 @@ header {
       }
 
       .telephone li {
-        padding-left: 145px;
+        padding-left: 127px;
       }
 
       img {
@@ -1348,6 +1370,10 @@ header {
   header {
 
     .menu {
+      .menu-center {
+
+        padding-top: 11px;
+      }
       img {
         position: relative;
         top: 6px;
@@ -1358,6 +1384,11 @@ header {
         display: flex;
         justify-content: left;
         flex-wrap: wrap;
+        .telephonenav {
+          .pull-right {
+            padding-top: 0;
+          }
+        }
       }
 
       .telephone li {
@@ -1368,9 +1399,16 @@ header {
     }
 
     .menu2 {
-
+      .rightt {
+        .navbar-nav {
+          margin: 1px;
+          margin-top: 3px;
+          padding-left: -17px;
+          margin-bottom: 0;
+        }
+      }
       .search {
-        padding-left: 2%;
+        padding-left: 1%;
         padding-top: 0;
         padding-bottom: 0;
 
@@ -1379,7 +1417,7 @@ header {
         }
 
         input.form-control {
-          width: 391px;
+          width: 380px;
           display: inline-block;
         }
 
@@ -1474,48 +1512,47 @@ header {
   }
 }
 
-@media only screen and (max-width: 762px) {
-
+@media only screen and (max-width: 765px) {
   header {
+
     hr {
-      display: none;
+      width: 100%;
     }
-  }
-
-  .content {
-
-    .news {
-      .card {
-
-        .card2 {
-          .card22 {
-            padding-left: 0;
-          }
-        }
-
+    .menu2 {
+      .base li {
+        padding-left: 0;
+        padding-right: 13px;
       }
-
     }
 
   }
 
 }
 
+@media only screen and (max-width: 762px) {
+
+  .content {
+    .news {
+      .card {
+        .card2 {
+          .card22 {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 716px) {
 
   .content {
-
     .children {
       padding-top: 14px;
       padding-bottom: 16px;
-      .text {
 
-      }
       ul {
         padding-bottom: 9px;
-      }
-      .text1 {
-
       }
 
       .text2 {
@@ -1600,6 +1637,9 @@ header {
               p {
                 margin-bottom: 0;
               }
+              .uper {
+                font-size: 10px;
+              }
             }
           }
         }
@@ -1640,8 +1680,15 @@ header {
 @media only screen and (max-width: 538px) {
 
   header {
-
+    hr {
+      display: block;
+      width: 100%;
+    }
     .menu {
+
+      .logo {
+        text-align: center;
+      }
 
       #about {
         display: none;
@@ -1652,47 +1699,97 @@ header {
         padding-bottom: 2px;
 
       }
+
+      .telephone {
+        height: 0;
+        li.tel {
+          padding-left: 1px;
+        }
+        .telephonenav {
+          position: relative;
+          li {
+            text-align: center;
+
+          }
+          .glyphicon-earphone {
+            display: none;
+          }
+          .menuT {
+            height: 0;
+            display: block;
+            .glyphicon-phone {
+              top: -59px;
+              left: 4px;
+              z-index: 220;
+            }
+          }
+          .pull-right {
+
+            padding: 5px 10px;
+            display: none;
+            float: none;
+            position: absolute;
+            background-color: #FFFFFF;
+            top: -36px;
+            left: 25px;
+            z-index: 200;
+            width: 180px;
+            box-shadow: 0 0 6px 3px rgba(0, 0, 0, .08);
+          }
+        }
+      }
     }
 
     .menu2 {
-      .search input.form-control {
-        width: 333px;
+
+      .leftt {
+        position: relative;
+        .menuT2 {
+          height: 0;
+          display: block;
+          .glyphicon-align-justify {
+            z-index: 220;
+            top: -64px;
+            left: 0;
+          }
+
+        }
+        .base {
+          padding-right: 20px;
+          padding-left: 20px;
+          li {
+            display: block;
+            padding-bottom: 20px;
+
+          }
+          top: -29px;
+          left: 16px;
+          display: none;
+          position: absolute;
+          background-color: #FFFFFF;
+          z-index: 200;
+          box-shadow: 0 0 6px 3px rgba(0, 0, 0, .08);
+        }
+        #qq2 {
+          padding-left: 0;
+          display: block !important;
+
+        }
       }
 
-      #qq2 {
-        padding-left: 0;
-        display: block !important;
-        li {
-          list-style-type: none;
-          padding-bottom: 10px;
+      .rightt {
+        position: relative;
+        .language {
+          position: absolute;
+          top: -65px;
+          right: 6px;
+          li.active-link a {
+            margin-bottom: 1px;
+          }
         }
-        a {
-          font-size: 12px;
-          text-decoration: none;
-          color: #8B8681;
-          padding-top: 7px;
-          padding-bottom: 7px;
+        input.form-control {
+          width: 333px;
         }
-        a:hover {
-          color: #FFFFFF;
-          background-color: #ed0039;
-          border-radius: 3px;
-        }
-
-        a.company {
-          color: #ed0039;
-        }
-
-        a.company:hover {
-          color: #FFFFFF;
-        }
-
-        a.active-link {
-          color: #FFFFFF;
-          background-color: #ed0039;
-          border-radius: 3px;
-        }
-
       }
 
     }
@@ -1785,58 +1882,35 @@ header {
         display: block;
       }
       .telephone .telephonenav .pull-right {
-        padding-top: 30px;
+
       }
 
     }
   }
 
-}
-
-@media only screen and (max-width: 480px) {
-
   .content {
-    overflow: hidden;
 
-    .children {
-
-      .text {
-
-      }
-      .text1 {
-
-      }
-
-      .text2 {
-
-      }
-      li {
-
-      }
-      .calc a {
-
+    .news {
+      .card1 {
+        section {
+          div {
+            p {
+              display: none;
+            }
+            .uper {
+              padding-top: 10px;
+              display: block;
+            }
+          }
+        }
       }
     }
+
   }
 
 }
 
 @media only screen and (max-width: 471px) {
-  header {
-
-    .menu {
-      .telephone {
-        text-align: left;
-      }
-    }
-
-    .menu2 {
-      .search input.form-control {
-        width: 190px;
-      }
-    }
-
-  }
 
   .content {
 
@@ -1875,15 +1949,22 @@ header {
 
 }
 
+@media only screen and (max-width: 459px) {
+  header {
+
+    .menu2 {
+      .search input.form-control {
+        width: 352px;
+      }
+    }
+  }
+
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 420px) {
 
   header {
-    .menu {
-      li {
-        margin-top: 0;
-      }
-    }
 
     .menu2 {
       .search input.form-control {
@@ -1893,15 +1974,6 @@ header {
   }
 
   .content {
-
-    .news {
-      .card {
-        .card2 {
-
-        }
-      }
-    }
-
     .insurance {
       .topic {
         p {
@@ -1950,7 +2022,24 @@ header {
   }
 }
 
+@media only screen and (max-width: 386px) {
+  header {
+
+    .menu2 {
+      .search {
+
+        .language {
+
+          z-index: 220;
+        }
+
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 375px) {
+
   .content {
 
     .children {

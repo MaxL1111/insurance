@@ -34,7 +34,9 @@
 
         <div class="row menu">
 
-            <div class="col-lg-4 col-md-4 col-sm-7"><img src="img/logo.jpg"></div>
+            <div class="col-lg-4 col-md-4 col-sm-7 col-xs-24 logo"><img src="img/logo.jpg">
+
+            </div>
 
 
             <div class="col-lg-11 col-md-13 col-sm-17 col-xs-24 menu-center">
@@ -51,26 +53,14 @@
 
 
             <div class="col-lg-9 col-md-7 col-sm-24 col-xs-24 telephone">
-                <nav class="navbar navbar-default telephonenav">
-                    <div class="navbar-header">
+                <nav class="telephonenav">
+                    <div class="menuT"><span class="glyphicon glyphicon-phone"></div>
+                    <ul id="tel" class="nav navbar-nav pull-right">
+                        <li><span class="glyphicon glyphicon-earphone"></span> +375 (17) 366-70-05</li>
+                        <li class="tel">+375 (17) 366-69-63</li>
+                        <li class="tel">+375 (17) 116-77-63</li>
+                    </ul>
 
-                        <button id="button1" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul id="tel" class="nav navbar-nav pull-right">
-                                <li><span class="glyphicon glyphicon-earphone"></span> +375 (17) 366-70-05</li>
-                                <li class="tel">+375 (17) 366-69-63</li>
-                                <li class="tel">+375 (17) 116-77-63</li>
-                            </ul>
-                        </div>
-                    </div>
                 </nav>
             </div>
 
@@ -82,34 +72,17 @@
 
 
     <div class="container">
-        <nav class="navbar navbar-default menu2">
+        <nav class="menu2">
             <div class="row">
 
-
                 <div class="col-lg-11 col-lg-offset-4 col-md-11 col-md-offset-4 col-sm-18 col-sm-offset-6 leftt">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button id="toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                        <ul id="qq1" class="nav navbar-nav base">
-
-                            <ul id="qq2"></ul>
-                            <li><a href="#">Физическим лицам<span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Юридическим лицам</a></li>
-                            <li><a href="#">Сервис</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-
+                    <div class="menuT2"><span class="glyphicon glyphicon-align-justify"></div>
+                    <ul class="base">
+                        <li><a href="#">Физическим лицам</a></li>
+                        <li><a href="#">Юридическим лицам</a></li>
+                        <li><a href="#">Сервис</a></li>
+                        <ul id="qq2"></ul>
+                    </ul>
                 </div>
 
                 <div class="col-lg-9 col-md-9 col-sm-24 col-xs-24 rightt">
@@ -238,7 +211,7 @@
 
                         <section>
                             <img src="img/news2.jpg">
-                            <div >
+                            <div>
 
                                 <a href="#">Забота о вашей финансовой безопасности,мы будем заботиться о
                                     своем здоровье</a>
@@ -275,11 +248,6 @@
     <div class="container insurance">
         <div class="row topic"><span>Популярные виды страхования</span></div>
         <div class="row row-flex">
-
-
-
-
-
 
 
             <div class="col-md-8 col-sm-12 center-block image">

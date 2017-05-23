@@ -144,22 +144,26 @@ header {
   header .menu .menu-center {
     padding-left: 20px;
     padding-top: 13px; }
-  header .menu .telephone {
-    overflow: hidden; }
-    header .menu .telephone .telephonenav {
-      background-color: #FFFFFF;
-      margin-bottom: 0; }
-      header .menu .telephone .telephonenav .pull-right {
-        padding-top: 16px; }
-      header .menu .telephone .telephonenav #button1 {
-        float: left; }
-    header .menu .telephone li {
-      list-style-type: none;
-      display: inline-block;
-      font-size: 13px;
-      font-family: Arial, sans-serif;
-      padding-left: 3px;
-      padding-right: 1px; }
+  header .menu .telephone .telephonenav {
+    position: relative;
+    background-color: #FFFFFF;
+    margin-bottom: 0; }
+    header .menu .telephone .telephonenav .menuT {
+      font-size: 22px;
+      color: #0f0f0f;
+      display: none;
+      cursor: pointer; }
+    header .menu .telephone .telephonenav .pull-right {
+      padding-top: 16px; }
+    header .menu .telephone .telephonenav #button1 {
+      float: left; }
+  header .menu .telephone li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    padding-left: 3px;
+    padding-right: 1px; }
   header .menu ul {
     padding-left: 0;
     display: block; }
@@ -172,8 +176,7 @@ header {
     padding-right: 0;
     background-color: #FFFFFF;
     top: 21px;
-    z-index: 200;
-    overflow: hidden; }
+    z-index: 200; }
   header .menu a:hover {
     color: #FFFFFF;
     background-color: #ed0039;
@@ -194,32 +197,38 @@ header {
   header nav.menu2 {
     border-bottom-width: 0; }
   header .menu2 {
-    background-color: #FFFFFF;
     margin-bottom: 0; }
-    header .menu2 #bs-example-navbar-collapse-2 {
+    header .menu2 .menuT2 {
+      font-size: 22px;
+      color: #0f0f0f;
+      display: none;
+      cursor: pointer; }
+    header .menu2 .base {
+      padding-top: 13px;
       padding-left: 0; }
-    header .menu2 .navbar-nav > li {
-      padding-right: 19px; }
-    header .menu2 .navbar-nav > li > a {
-      color: #68625b;
-      padding-top: 14px;
-      padding-left: 13px;
-      padding-right: 13px;
-      padding-bottom: 14px;
-      margin-bottom: 0;
-      font-size: 16px;
-      border-bottom: solid 2px transparent;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-    header .menu2 .navbar-toggle {
-      float: left; }
-    header .menu2 .navbar-nav > li > a:hover {
-      color: #762b39;
-      border-bottom-color: #762b39; }
-    header .menu2 .navbar-nav > li {
-      padding-left: 1px; }
+      header .menu2 .base li {
+        padding-right: 19px;
+        list-style-type: none;
+        display: inline-block; }
+      header .menu2 .base li > a {
+        color: #68625b;
+        padding-top: 14px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 14px;
+        text-decoration: none;
+        margin-bottom: 0;
+        font-size: 16px;
+        border-bottom: solid 2px transparent;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      header .menu2 .base li > a:hover {
+        color: #762b39;
+        border-bottom-color: #762b39; }
+      header .menu2 .base li {
+        padding-left: 1px; }
     header .menu2 .language li {
       padding-top: 4%;
       padding-right: 1px; }
@@ -243,7 +252,7 @@ header {
       background-color: #ed0039;
       border-radius: 2px; }
     header .menu2 .search {
-      padding-left: 14px; }
+      padding-left: 30px; }
       header .menu2 .search .form-group {
         float: left; }
       header .menu2 .search button {
@@ -738,11 +747,16 @@ header {
   header .menu .telephone ul {
     margin-bottom: 0; }
   header .menu .telephone {
-    text-align: right; }
+    padding-left: 127px; }
     header .menu .telephone .telephonenav .pull-right {
       padding-top: 12px; }
   header .menu .telephone li.tel {
     padding-left: 18px; }
+  header .menu2 .base li {
+    padding-right: 0; }
+    header .menu2 .base li a {
+      padding-left: 6px;
+      padding-right: 6px; }
   header .menu2 span.glyphicon-search {
     margin-left: 0; }
   header .menu2 .navbar-nav > li {
@@ -775,11 +789,13 @@ header {
   header .menu nav li {
     padding-left: 1px; }
   header .menu .telephone {
+    padding-left: 43px;
+    padding-bottom: 4px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
   header .menu .telephone li {
-    padding-left: 145px; }
+    padding-left: 127px; }
   header .menu img {
     top: 26px; }
   header .menu2 .base li {
@@ -837,6 +853,8 @@ header {
       padding: 8px 19px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  header .menu .menu-center {
+    padding-top: 11px; }
   header .menu img {
     position: relative;
     top: 6px; }
@@ -844,17 +862,24 @@ header {
     display: flex;
     justify-content: left;
     flex-wrap: wrap; }
+    header .menu .telephone .telephonenav .pull-right {
+      padding-top: 0; }
   header .menu .telephone li {
     padding-left: 1px;
     padding-right: 3px; }
+  header .menu2 .rightt .navbar-nav {
+    margin: 1px;
+    margin-top: 3px;
+    padding-left: -17px;
+    margin-bottom: 0; }
   header .menu2 .search {
-    padding-left: 2%;
+    padding-left: 1%;
     padding-top: 0;
     padding-bottom: 0; }
     header .menu2 .search .form-group {
       padding-top: 3px; }
     header .menu2 .search input.form-control {
-      width: 391px;
+      width: 380px;
       display: inline-block; }
     header .menu2 .search .language li.active-link {
       display: inline-block;
@@ -896,10 +921,13 @@ header {
     padding-bottom: 23px; }
   .content .insurance .topic {
     padding-left: 23px; } }
-@media only screen and (max-width: 762px) {
+@media only screen and (max-width: 765px) {
   header hr {
-    display: none; }
-
+    width: 100%; }
+  header .menu2 .base li {
+    padding-left: 0;
+    padding-right: 13px; } }
+@media only screen and (max-width: 762px) {
   .content .news .card .card2 .card22 {
     padding-left: 0; } }
 @media only screen and (max-width: 716px) {
@@ -943,6 +971,8 @@ header {
       line-height: 14px; }
       .content .news .card .card1 section div p {
         margin-bottom: 0; }
+      .content .news .card .card1 section div .uper {
+        font-size: 10px; }
   .content .news .card .card2 .card21 a {
     font-size: 12px; }
   .content .news .card .card2 .card21 section {
@@ -958,37 +988,79 @@ header {
       line-height: 14px;
       padding-top: 2px; } }
 @media only screen and (max-width: 538px) {
+  header hr {
+    display: block;
+    width: 100%; }
+  header .menu .logo {
+    text-align: center; }
   header .menu #about {
     display: none; }
   header .menu li {
     padding-top: 5px;
     padding-bottom: 2px; }
-  header .menu2 .search input.form-control {
-    width: 333px; }
-  header .menu2 #qq2 {
-    padding-left: 0;
-    display: block !important; }
-    header .menu2 #qq2 li {
-      list-style-type: none;
-      padding-bottom: 10px; }
-    header .menu2 #qq2 a {
-      font-size: 12px;
-      text-decoration: none;
-      color: #8B8681;
-      padding-top: 7px;
-      padding-bottom: 7px; }
-    header .menu2 #qq2 a:hover {
-      color: #FFFFFF;
-      background-color: #ed0039;
-      border-radius: 3px; }
-    header .menu2 #qq2 a.company {
-      color: #ed0039; }
-    header .menu2 #qq2 a.company:hover {
-      color: #FFFFFF; }
-    header .menu2 #qq2 a.active-link {
-      color: #FFFFFF;
-      background-color: #ed0039;
-      border-radius: 3px; }
+  header .menu .telephone {
+    height: 0; }
+    header .menu .telephone li.tel {
+      padding-left: 1px; }
+    header .menu .telephone .telephonenav {
+      position: relative; }
+      header .menu .telephone .telephonenav li {
+        text-align: center; }
+      header .menu .telephone .telephonenav .glyphicon-earphone {
+        display: none; }
+      header .menu .telephone .telephonenav .menuT {
+        height: 0;
+        display: block; }
+        header .menu .telephone .telephonenav .menuT .glyphicon-phone {
+          top: -59px;
+          left: 4px;
+          z-index: 220; }
+      header .menu .telephone .telephonenav .pull-right {
+        padding: 5px 10px;
+        display: none;
+        float: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        top: -36px;
+        left: 25px;
+        z-index: 200;
+        width: 180px;
+        box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.08); }
+  header .menu2 .leftt {
+    position: relative; }
+    header .menu2 .leftt .menuT2 {
+      height: 0;
+      display: block; }
+      header .menu2 .leftt .menuT2 .glyphicon-align-justify {
+        z-index: 220;
+        top: -64px;
+        left: 0; }
+    header .menu2 .leftt .base {
+      padding-right: 20px;
+      padding-left: 20px;
+      top: -29px;
+      left: 16px;
+      display: none;
+      position: absolute;
+      background-color: #FFFFFF;
+      z-index: 200;
+      box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.08); }
+      header .menu2 .leftt .base li {
+        display: block;
+        padding-bottom: 20px; }
+    header .menu2 .leftt #qq2 {
+      padding-left: 0;
+      display: block !important; }
+  header .menu2 .rightt {
+    position: relative; }
+    header .menu2 .rightt .language {
+      position: absolute;
+      top: -65px;
+      right: 6px; }
+      header .menu2 .rightt .language li.active-link a {
+        margin-bottom: 1px; }
+    header .menu2 .rightt input.form-control {
+      width: 333px; }
 
   .footer3 a {
     padding-left: 14px;
@@ -1018,17 +1090,13 @@ header {
     padding-left: 1px;
     padding-right: 3px;
     display: block; }
-  header .menu .telephone .telephonenav .pull-right {
-    padding-top: 30px; } }
-@media only screen and (max-width: 480px) {
-  .content {
-    overflow: hidden; } }
-@media only screen and (max-width: 471px) {
-  header .menu .telephone {
-    text-align: left; }
-  header .menu2 .search input.form-control {
-    width: 190px; }
 
+  .content .news .card1 section div p {
+    display: none; }
+  .content .news .card1 section div .uper {
+    padding-top: 10px;
+    display: block; } }
+@media only screen and (max-width: 471px) {
   .content .children .text1 {
     font-size: 18px; }
   .content .children .text2 {
@@ -1044,10 +1112,11 @@ header {
     .footer .brawn .padding1, .footer .brawn .padding2, .footer .brawn .padding3, .footer .brawn .padding4 {
       width: 350px;
       float: left; } }
+@media only screen and (max-width: 459px) {
+  header .menu2 .search input.form-control {
+    width: 352px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 420px) {
-  header .menu li {
-    margin-top: 0; }
   header .menu2 .search input.form-control {
     width: 173px; }
 
@@ -1071,6 +1140,9 @@ header {
 @media only screen and (max-width: 379px) {
   .content .news .allNews {
     display: block; } }
+@media only screen and (max-width: 386px) {
+  header .menu2 .search .language {
+    z-index: 220; } }
 @media only screen and (max-width: 375px) {
   .content .children {
     padding-top: 8px;
