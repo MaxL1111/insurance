@@ -36,7 +36,6 @@ if (mql.matches) {
 
 //выпадающее меню1
 $(function () {
-
     $('.menuT').on('click', function () {
         $('.pull-right').slideToggle(300, function () {
             if($(this).css('display') === 'none'){
@@ -44,14 +43,11 @@ $(function () {
             }
         });
     })
-
-
 });
 
 
 //выпадающее меню2
 $(function () {
-
     $('.menuT2').on('click', function () {
         $('.base').slideToggle(300, function () {
             if($(this).css('display') === 'none'){

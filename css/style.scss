@@ -315,7 +315,7 @@ header {
         padding-top: 14px;
         padding-left: 13px;
         padding-right: 13px;
-        padding-bottom: 14px;
+        padding-bottom: 16px;
         text-decoration: none;
         margin-bottom: 0;
         font-size: 16px;
@@ -713,11 +713,12 @@ header {
           margin-bottom: 3px;
         }
       }
-      div:hover {
-        border-bottom-color: transparent;
-      }
+
       section:hover {
         border-color: #761c19;
+        div {
+          border-bottom-color: transparent;
+        }
       }
 
       a {
@@ -770,11 +771,12 @@ header {
           border-left: none;
 
         }
-        div:hover {
-          border-bottom-color: transparent;
-        }
+
         section:hover {
           border-color: #761c19;
+          div {
+            border-bottom-color: transparent;
+          }
         }
 
         a {
@@ -802,7 +804,7 @@ header {
       .card22 {
         padding-right: 0;
         padding-left: 0;
-        padding-top: 3px;
+        padding-top: 2px;
         section {
           box-sizing: content-box;
           height: 93px;
@@ -824,11 +826,12 @@ header {
           border: 2px solid #e1e0de;
           border-left: none;
         }
-        div:hover {
-          border-bottom-color: transparent;
-        }
+
         section:hover {
           border-color: #761c19;
+          div {
+            border-bottom-color: transparent;
+          }
         }
 
         a {
@@ -1776,7 +1779,7 @@ header {
           }
         }
         input.form-control {
-          width: 333px;
+          width: 231px;
         }
       }
 
@@ -1824,6 +1827,7 @@ header {
 
 @media only screen and (min-width: 539px) {
 
+
   header {
     .menu {
       #about {
@@ -1835,6 +1839,8 @@ header {
       #qq2 {
         display: none;
       }
+
+
     }
   }
 }
@@ -1916,7 +1922,7 @@ header {
 
     .menu2 {
       .search input.form-control {
-        width: 352px;
+        width: 320px;
       }
     }
   }

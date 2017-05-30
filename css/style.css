@@ -215,7 +215,7 @@ header {
         padding-top: 14px;
         padding-left: 13px;
         padding-right: 13px;
-        padding-bottom: 14px;
+        padding-bottom: 16px;
         text-decoration: none;
         margin-bottom: 0;
         font-size: 16px;
@@ -479,10 +479,10 @@ header {
         .content .news .card1 div p {
           padding-top: 5px;
           margin-bottom: 3px; }
-      .content .news .card1 div:hover {
-        border-bottom-color: transparent; }
       .content .news .card1 section:hover {
         border-color: #761c19; }
+        .content .news .card1 section:hover div {
+          border-bottom-color: transparent; }
       .content .news .card1 a {
         text-decoration: none;
         font-family: Fedra, sans-serif;
@@ -518,10 +518,10 @@ header {
           padding-left: 20px;
           border: 2px solid #e1e0de;
           border-left: none; }
-        .content .news .card2 .card21 div:hover {
-          border-bottom-color: transparent; }
         .content .news .card2 .card21 section:hover {
           border-color: #761c19; }
+          .content .news .card2 .card21 section:hover div {
+            border-bottom-color: transparent; }
         .content .news .card2 .card21 a {
           font-family: Fedra, sans-serif;
           font-size: 14px;
@@ -541,7 +541,7 @@ header {
       .content .news .card2 .card22 {
         padding-right: 0;
         padding-left: 0;
-        padding-top: 3px; }
+        padding-top: 2px; }
         .content .news .card2 .card22 section {
           box-sizing: content-box;
           height: 93px;
@@ -558,10 +558,10 @@ header {
           padding-left: 20px;
           border: 2px solid #e1e0de;
           border-left: none; }
-        .content .news .card2 .card22 div:hover {
-          border-bottom-color: transparent; }
         .content .news .card2 .card22 section:hover {
           border-color: #761c19; }
+          .content .news .card2 .card22 section:hover div {
+            border-bottom-color: transparent; }
         .content .news .card2 .card22 a {
           font-family: Fedra, sans-serif;
           font-size: 14px;
@@ -1060,7 +1060,7 @@ header {
       header .menu2 .rightt .language li.active-link a {
         margin-bottom: 1px; }
     header .menu2 .rightt input.form-control {
-      width: 333px; }
+      width: 231px; }
 
   .footer3 a {
     padding-left: 14px;
@@ -1114,7 +1114,7 @@ header {
       float: left; } }
 @media only screen and (max-width: 459px) {
   header .menu2 .search input.form-control {
-    width: 352px; } }
+    width: 320px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 420px) {
   header .menu2 .search input.form-control {

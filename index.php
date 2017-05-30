@@ -27,17 +27,15 @@
 <div class="icon3"><a href="#"><span class="glyphicon glyphicon glyphicon-envelope"></span><br>Почта</a></div>
 <div class="icon4"><a href="#"><span class="glyphicon glyphicon glyphicon-arrow-down"></span><br>Убыток</a></div>
 
-
+<!-- begin header -->
 <header>
     <div class="container">
-
 
         <div class="row menu">
 
             <div class="col-lg-4 col-md-4 col-sm-7 col-xs-24 logo"><img src="img/logo.jpg">
 
             </div>
-
 
             <div class="col-lg-11 col-md-13 col-sm-17 col-xs-24 menu-center">
                 <nav>
@@ -63,13 +61,9 @@
 
                 </nav>
             </div>
-
-
-            <!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        </div>
         <hr align="right">
     </div>
-
 
     <div class="container">
         <nav class="menu2">
@@ -96,19 +90,17 @@
                             <li class="active-link"><a href="#">RU</a></li>
                             <li><a href="#">EN</a></li>
                         </ul>
-
-
                     </form>
                 </div>
 
             </div>
         </nav>
-    </div><!-- /.container-fluid -->
-
-
+    </div>
 </header>
+<!-- end header -->
 
 
+<!-- begin content -->
 <div class="content">
 
     <div class="container-fluid children">
@@ -187,9 +179,7 @@
 
 
             <div class="row">
-
                 <div class="col-md-12 col-sm-24 row-flex card1">
-
                     <section>
                         <img src="img/news1.jpg">
                         <div>
@@ -201,30 +191,24 @@
                             <p class="uper">21 января 2017</p>
                         </div>
                     </section>
-
                 </div>
 
 
                 <div class="col-md-12 col-sm-24 row-flex card2">
 
                     <div class="col-md-24 col-sm-12 col-xs-24 card21">
-
                         <section>
                             <img src="img/news2.jpg">
                             <div>
-
                                 <a href="#">Забота о вашей финансовой безопасности,мы будем заботиться о
                                     своем здоровье</a>
                                 <p class="uper">19 января 2017</p>
-
                             </div>
                         </section>
-
                     </div>
 
 
                     <div class="col-md-24 col-sm-12 col-xs-24 card22">
-
                         <section>
                             <img src="img/news3.jpg">
                             <div>
@@ -233,12 +217,9 @@
                                 <p class="uper">3 января 2017</p>
                             </div>
                         </section>
-
-
                     </div>
 
                 </div>
-
 
             </div>
         </div>
@@ -305,10 +286,12 @@
 
 
 </div>
+<!-- end content -->
 
 
+
+<!-- begin footer -->
 <div class="footer">
-
 
     <div class="container brawn">
         <div class="row row-flex">
@@ -398,7 +381,6 @@
 
 
 <div class="footer3">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-11 col-md-14 col-sm-20 col-xs-24">
@@ -419,6 +401,10 @@
 
     </div>
 </div>
+<!-- end footer -->
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
