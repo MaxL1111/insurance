@@ -1,1 +1,1 @@
-# insurance
+верстка psd-шаблона. Использован bootstrap, sass.
